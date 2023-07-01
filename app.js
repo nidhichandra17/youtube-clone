@@ -1,51 +1,54 @@
- const baseurl = "https://www.googleapis.com/youtube/v3"; const apiKey = "";
-
-
-
- async function getVideos(q){
-   const url = `${baseurl}/search?key=${apiKey}&q=${q}&maxResults=20`;
-   const response = await fetch(url)
-   const data = await response.json();
-   const videos = data.items;
-   console.log(videos)
- }
- async function getvedioDetails(videoId){
-     const url = `${baseurl} /videos?part=snippet,contentDetails,statistics&id=video_id&key={apiKey}`;
-     const response = await fetch(url)
-     const data = await response.json();
-     console.log(data)
- }
  
- getVideos("");
- getvedioDetails("")
 
- const baseurl = "https://www.googleapis.com/youtube/v3";
- const apiKey = "AIzaSyA23bUjUYTSyOhERLMhjvQ6ZNqh-kbL0OU"; // Replace with your actual API key
+// const baseurl = "https://www.googleapis.com/youtube/v3";
+// const apiKey = "";
 
- async function getVideos(q) {
-   const url = `${baseurl}/search?key=${apiKey}&q=${q}&maxResults=20`;
-   const response = await fetch(url);
-   const data = await response.json();
-   const videos = data.items;
-   console.log( "gettvideos",videos);
- }
 
- async function getVideoData(videos){
-     let VideoData = [];
-     for(let i=0;i<videos.length;i++){
-       VideoData,push()
-     }
- }
 
- async function getVideoDetails(videoId) {
-   const url = `${baseurl}/videos?part=snippet,contentDetails,statistics&id=${videoId}&key=${apiKey}`;
-   const response = await fetch(url);
-   const data = await response.json();
-   console.log("getvideodetaial",data);
- }
+// async function getVideos(q){
+//   const url = `${baseurl}/search?key=${apiKey}&q=${q}&maxResults=20`;
+//   const response = await fetch(url)
+//   const data = await response.json();
+//   const videos = data.items;
+//   console.log(videos)
+// }
+// async function getvedioDetails(videoId){
+//     const url = `${baseurl} /videos?part=snippet,contentDetails,statistics&id=video_id&key={apiKey}`;
+//     const response = await fetch(url)
+//     const data = await response.json();
+//     console.log(data)
+// }
+ 
+// getVideos("");
+// getvedioDetails("")
 
- getVideos("cats");
- getVideoDetails("QZHVhDjpEkE");
+// const baseurl = "https://www.googleapis.com/youtube/v3";
+// const apiKey = "AIzaSyA23bUjUYTSyOhERLMhjvQ6ZNqh-kbL0OU"; // Replace with your actual API key
+
+// async function getVideos(q) {
+//   const url = `${baseurl}/search?key=${apiKey}&q=${q}&maxResults=20`;
+//   const response = await fetch(url);
+//   const data = await response.json();
+//   const videos = data.items;
+//   console.log( "gettvideos",videos);
+// }
+
+// async function getVideoData(videos){
+//     let VideoData = [];
+//     for(let i=0;i<videos.length;i++){
+//       VideoData,push()
+//     }
+// }
+
+// async function getVideoDetails(videoId) {
+//   const url = `${baseurl}/videos?part=snippet,contentDetails,statistics&id=${videoId}&key=${apiKey}`;
+//   const response = await fetch(url);
+//   const data = await response.json();
+//   console.log("getvideodetaial",data);
+// }
+
+// getVideos("cats");
+// getVideoDetails("QZHVhDjpEkE");
 const videoCardContainer = document.querySelector('.video-container');
 let api_key = "AIzaSyA23bUjUYTSyOhERLMhjvQ6ZNqh-kbL0OU";
 let video_http = "https://www.googleapis.com/youtube/v3/videos?";
