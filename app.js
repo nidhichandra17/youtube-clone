@@ -23,7 +23,7 @@
 // getvedioDetails("")
 
 // const baseurl = "https://www.googleapis.com/youtube/v3";
-// const apiKey = "AIzaSyA23bUjUYTSyOhERLMhjvQ6ZNqh-kbL0OU"; // Replace with your actual API key
+// const apiKey = "AIzaSyCFTwgJmuOIBSnDvyHx9rdefhS5Hm5A8uQ"; // Replace with your actual API key
 
 // async function getVideos(q) {
 //   const url = `${baseurl}/search?key=${apiKey}&q=${q}&maxResults=20`;
